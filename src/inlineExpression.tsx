@@ -16,7 +16,7 @@ export interface IRenderedExpressionOptions {
 export class RenderedExpressionError extends Widget {
   constructor() {
     super();
-    this.addClass('myst-RenderedExpressionError');
+    this.addClass('jp-RenderedExpressionError');
   }
 }
 
@@ -34,7 +34,7 @@ export class RenderedExpression extends Widget {
     this.rendermime = options.rendermime;
     this.safe = options.safe;
 
-    this.addClass('myst-RenderedExpression');
+    this.addClass('jp-RenderedExpression');
 
     // We can only hold one renderer at a time
     const layout = (this.layout = new SingletonLayout());

@@ -56,7 +56,7 @@ export class MySTMarkdownCell
     const parseComplete = renderNotebook(notebook);
     const widget = new Widget({ node: this.myst.node });
     widget.addClass('myst');
-    this.addClass('myst-MySTMarkdownCell');
+    this.addClass('jp-MySTMarkdownCell');
     this.inputArea.renderInput(widget);
     if (parseComplete) {
       parseComplete.then(() => this._doneRendering.resolve());
