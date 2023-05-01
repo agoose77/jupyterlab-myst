@@ -74,7 +74,7 @@ export const linkFactory =
       handleAnchor(ref.current, resolver, linkHandler);
     }, [ref, url]);
     return (
-      <a href={url} ref={ref}>
+      <a href={url} ref={ref} className={props.className}>
         {props.children}
       </a>
     );
